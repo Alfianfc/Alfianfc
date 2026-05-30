@@ -82,58 +82,6 @@ Dark, modern, high-signal interfaces with energetic accents and distinctive prod
 </tr>
 </table>
 
-## `current-focus`
-
-- Building an AI-assisted bounty and contribution workflow for open-source ecosystems.
-- Exploring agentic systems for research, coding, content, and money ops.
-- Shipping polished products around automation, media, and crypto-native communities.
-- Turning scrappy ideas into usable tools with clean architecture and strong visual direction.
-
-## `stack`
-
-<div align="center">
-
-### Languages & Frameworks
-
-<img src="https://skillicons.dev/icons?i=python,ts,js,react,nextjs,nodejs,html,css" alt="languages and frameworks" />
-
-### Tools & Platforms
-
-<img src="https://skillicons.dev/icons?i=git,github,vscode,figma,linux,docker,cloudflare,vercel" alt="tools and platforms" />
-
-### Domains
-
-<img src="https://img.shields.io/badge/AI%20Agents-7C3AED?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Web3-10B981?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Automation-0EA5E9?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Product%20Design-F59E0B?style=for-the-badge" />
-
-</div>
-
-## `selected-signal`
-
-```bash
-$ recent_activity --high-signal
-> Contributing to AI evaluation / RL environment tooling
-> Building automated bounty discovery + execution loops
-> Designing AI-native creator and crypto tooling ideas
-> Keeping products fast, visual, and useful
-```
-
-## `github-stats`
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Alfianfc&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&custom_title=0x357%20GitHub%20Signal" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alfianfc&layout=compact&theme=tokyonight&hide_border=true" />
-
-<br />
-<br />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Alfianfc&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Graph" width="100%" alt="GitHub activity graph" />
-
-</div>
-
 ## `collab`
 
 <div align="center">
