@@ -1,0 +1,24 @@
+<svg width="980" height="220" viewBox="0 0 980 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="980" y2="220">
+      <stop stop-color="#020617"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="980" y2="0">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.5" stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  <rect width="980" height="220" rx="22" fill="url(#bg)"/>
+  <rect x="1" y="1" width="978" height="218" rx="21" stroke="url(#accent)" stroke-opacity="0.65" stroke-width="2"/>
+  <circle cx="34" cy="32" r="7" fill="#EF4444"/>
+  <circle cx="58" cy="32" r="7" fill="#F59E0B"/>
+  <circle cx="82" cy="32" r="7" fill="#22C55E"/>
+  <text x="34" y="78" fill="#94A3B8" font-family="JetBrains Mono, Fira Code, Consolas, monospace" font-size="18">0x357@terminal:~$ whoami</text>
+  <text x="34" y="116" fill="#F8FAFC" font-family="JetBrains Mono, Fira Code, Consolas, monospace" font-size="22">builder focused on AI agents, Web3 automation, and product systems</text>
+  <text x="34" y="154" fill="#22D3EE" font-family="JetBrains Mono, Fira Code, Consolas, monospace" font-size="18">mission:</text>
+  <text x="126" y="154" fill="#CBD5E1" font-family="JetBrains Mono, Fira Code, Consolas, monospace" font-size="18">turn messy workflows into clean, verified execution loops</text>
+  <text x="34" y="190" fill="#10B981" font-family="JetBrains Mono, Fira Code, Consolas, monospace" font-size="18">status:</text>
+  <text x="116" y="190" fill="#CBD5E1" font-family="JetBrains Mono, Fira Code, Consolas, monospace" font-size="18">root access to taste, speed, and leverage</text>
+</svg>
