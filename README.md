@@ -82,6 +82,17 @@ Dark, modern, high-signal interfaces with energetic accents and distinctive prod
 </tr>
 </table>
 
+## `proof-of-work`
+
+```txt
+Hermes Desktop Windows Gateway bug
+- Submitted a public PR/fork patch for a Windows Gateway startup issue.
+- Upstream later shipped an equivalent Gateway error fix in v0.5.4.
+- Signal: bug direction validated, even though my PR itself was not merged.
+```
+
+[PR #484](https://github.com/fathah/hermes-desktop/pull/484) · [v0.5.4 release](https://github.com/fathah/hermes-desktop/releases/tag/v0.5.4)
+
 ## `collab`
 
 <div align="center">
