@@ -10,8 +10,6 @@
       @keyframes scan { 0% { transform: translateX(-220px); opacity: 0; } 18% { opacity: .22; } 70% { opacity: .18; } 100% { transform: translateX(930px); opacity: 0; } }
       .bomber { filter: url(#glow); }
       .bomb { filter: url(#bombGlow); }
-      @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-      .bomber { animation: bounce 0.6s ease-in-out infinite; }
     </style>
   </defs>
   <rect width="900" height="260" rx="22" fill="url(#bg)"/>
@@ -409,8 +407,34 @@
   <circle cx="1492.0" cy="123.60769515458674" r="1.5" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.10s" repeatCount="indefinite"/><animate attributeName="r" values="0;2;0" dur="2s" begin="1.10s" repeatCount="indefinite"/></circle>
   </g>
   <path id="bomberPath" d="M 47 161.0 H 839" fill="none" stroke="none"/>
-  <g class="bomber"><circle cx="0" cy="0" r="18" fill="#ef4444"/><circle cx="0" cy="-2" r="14" fill="#fbbf24"/><circle cx="-4" cy="-8" r="2.5" fill="#1e293b"/><circle cx="4" cy="-8" r="2.5" fill="#1e293b"/><path d="M-3 2 Q0 6 3 2" fill="none" stroke="#1e293b" stroke-width="1.5"/><animateMotion dur="5.5s" repeatCount="indefinite" rotate="auto"><mpath href="#bomberPath"/></animateMotion></g>
-  <g class="bomb"><circle cx="612" cy="161" r="10" fill="#f1f5f9" stroke="#f59e0b" stroke-width="2"><animate attributeName="r" values="10;12;10" dur="0.5s" repeatCount="indefinite"/></circle><path d="M612 148 L612 145" stroke="#f59e0b" stroke-width="2"/><circle cx="612" cy="143" r="3" fill="#ef4444"><animate attributeName="opacity" values="1;0;1" dur="0.3s" repeatCount="indefinite"/></circle><animate attributeName="cx" values="612;666;612" dur="3.4s" repeatCount="indefinite"/></g>
-  <g class="bomb"><circle cx="300" cy="161" r="10" fill="#f1f5f9" stroke="#f59e0b" stroke-width="2"><animate attributeName="r" values="10;12;10" dur="0.5s" repeatCount="indefinite"/></circle><path d="M300 148 L300 145" stroke="#f59e0b" stroke-width="2"/><circle cx="300" cy="143" r="3" fill="#ef4444"><animate attributeName="opacity" values="1;0;1" dur="0.3s" repeatCount="indefinite"/></circle><animate attributeName="cx" values="300;354;300" dur="4.2s" repeatCount="indefinite"/></g>
+  <g class="bomber">
+    <animateMotion dur="5.5s" repeatCount="indefinite" rotate="auto"><mpath href="#bomberPath"/></animateMotion>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="0.4s" repeatCount="indefinite"/>
+    <circle cx="0" cy="0" r="18" fill="#ef4444"/>
+    <circle cx="0" cy="-2" r="14" fill="#fbbf24"/>
+    <circle cx="-4" cy="-8" r="2.5" fill="#1e293b"/>
+    <circle cx="4" cy="-8" r="2.5" fill="#1e293b"/>
+    <path d="M-3 2 Q0 6 3 2" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+  </g>
+  <g class="bomb">
+    <animate attributeName="cx" values="612;666;612" dur="3.4s" repeatCount="indefinite"/>
+    <circle cy="161" r="10" fill="#f1f5f9" stroke="#f59e0b" stroke-width="2">
+      <animate attributeName="r" values="10;12;10" dur="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M0,-13 L0,-16" stroke="#f59e0b" stroke-width="2" transform="translate(612,161)"/>
+    <circle cy="0" r="3" fill="#ef4444" transform="translate(612,145)">
+      <animate attributeName="opacity" values="1;0;1" dur="0.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g class="bomb">
+    <animate attributeName="cx" values="300;354;300" dur="4.2s" repeatCount="indefinite"/>
+    <circle cy="161" r="10" fill="#f1f5f9" stroke="#f59e0b" stroke-width="2">
+      <animate attributeName="r" values="10;12;10" dur="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M0,-13 L0,-16" stroke="#f59e0b" stroke-width="2" transform="translate(300,161)"/>
+    <circle cy="0" r="3" fill="#ef4444" transform="translate(300,145)">
+      <animate attributeName="opacity" values="1;0;1" dur="0.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
   <text x="42" y="226" class="sub">status: bombing the task queue • mission: automate the boring, explode the complexity</text>
 </svg>
