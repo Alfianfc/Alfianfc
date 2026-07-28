@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="Assets/banner.svg" alt="banner" style="border-radius: 24px;" width="100%" />
+<img src="Assets/banner.png" alt="banner" style="border-radius: 24px;" width="100%" />
 
 <br />
 
