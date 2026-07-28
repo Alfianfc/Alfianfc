@@ -2,13 +2,16 @@
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="0.55" stop-color="#e2e8f0"/><stop offset="1" stop-color="#f1f5f9"/></linearGradient>
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="bombGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <style>
       .title { font: 800 25px 'Fira Code', 'Segoe UI', monospace; fill: #1e293b; letter-spacing: .5px; }
       .sub { font: 600 12px 'Fira Code', 'Segoe UI', monospace; fill: #475569; letter-spacing: .9px; }
       .scan { animation: scan 4.5s linear infinite; }
       @keyframes scan { 0% { transform: translateX(-220px); opacity: 0; } 18% { opacity: .22; } 70% { opacity: .18; } 100% { transform: translateX(930px); opacity: 0; } }
       .bomber { filter: url(#glow); }
-      .bomb { filter: url(#glow); }
+      .bomb { filter: url(#bombGlow); }
+      @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+      .bomber { animation: bounce 0.6s ease-in-out infinite; }
     </style>
   </defs>
   <rect width="900" height="260" rx="22" fill="url(#bg)"/>
@@ -390,11 +393,24 @@
   <rect x="1476" y="232" width="20" height="20" rx="5" fill="#e2e8f0" opacity="0.55"><animate attributeName="opacity" values="0.55;0.35;0.55" dur="2.92s" begin="0.12s" repeatCount="indefinite"/></rect>
   </g>
   <g>
-  <circle cx="1486" cy="107" r="3.2" fill="#f59e0b" opacity="0.85"><animate attributeName="opacity" values="0.95;0;0.95" dur="5.5s" begin="1.77s" repeatCount="indefinite"/></circle>
-  <circle cx="1486" cy="134" r="3.2" fill="#f59e0b" opacity="0.85"><animate attributeName="opacity" values="0.95;0;0.95" dur="5.5s" begin="1.86s" repeatCount="indefinite"/></circle>
+  <circle cx="1486" cy="107" r="0" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0"><animate attributeName="r" values="0;15;0" dur="2s" begin="0.80s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.80s" repeatCount="indefinite"/></circle>
+  <circle cx="1498.0" cy="107.0" r="1.5" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.90s" repeatCount="indefinite"/><animate attributeName="r" values="0;2;0" dur="2s" begin="0.90s" repeatCount="indefinite"/></circle>
+  <circle cx="1492.0" cy="117.39230484541326" r="1.5" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.90s" repeatCount="indefinite"/><animate attributeName="r" values="0;2;0" dur="2s" begin="0.90s" repeatCount="indefinite"/></circle>
+  <circle cx="1480.0" cy="117.39230484541326" r="1.5" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.90s" repeatCount="indefinite"/><animate attributeName="r" values="0;2;0" dur="2s" begin="0.90s" repeatCount="indefinite"/></circle>
+  <circle cx="1474.0" cy="107.0" r="1.5" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.90s" repeatCount="indefinite"/><animate attributeName="r" values="0;2;0" dur="2s" begin="0.90s" repeatCount="indefinite"/></circle>
+  <circle cx="1480.0" cy="96.60769515458674" r="1.5" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.90s" repeatCount="indefinite"/><animate attributeName="r" values="0;2;0" dur="2s" begin="0.90s" repeatCount="indefinite"/></circle>
+  <circle cx="1492.0" cy="96.60769515458674" r="1.5" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.90s" repeatCount="indefinite"/><animate attributeName="r" values="0;2;0" dur="2s" begin="0.90s" repeatCount="indefinite"/></circle>
+  <circle cx="1486" cy="134" r="0" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0"><animate attributeName="r" values="0;15;0" dur="2s" begin="1.00s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1.00s" repeatCount="indefinite"/></circle>
+  <circle cx="1498.0" cy="134.0" r="1.5" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.10s" repeatCount="indefinite"/><animate attributeName="r" values="0;2;0" dur="2s" begin="1.10s" repeatCount="indefinite"/></circle>
+  <circle cx="1492.0" cy="144.39230484541326" r="1.5" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.10s" repeatCount="indefinite"/><animate attributeName="r" values="0;2;0" dur="2s" begin="1.10s" repeatCount="indefinite"/></circle>
+  <circle cx="1480.0" cy="144.39230484541326" r="1.5" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.10s" repeatCount="indefinite"/><animate attributeName="r" values="0;2;0" dur="2s" begin="1.10s" repeatCount="indefinite"/></circle>
+  <circle cx="1474.0" cy="134.0" r="1.5" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.10s" repeatCount="indefinite"/><animate attributeName="r" values="0;2;0" dur="2s" begin="1.10s" repeatCount="indefinite"/></circle>
+  <circle cx="1480.0" cy="123.60769515458674" r="1.5" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.10s" repeatCount="indefinite"/><animate attributeName="r" values="0;2;0" dur="2s" begin="1.10s" repeatCount="indefinite"/></circle>
+  <circle cx="1492.0" cy="123.60769515458674" r="1.5" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.10s" repeatCount="indefinite"/><animate attributeName="r" values="0;2;0" dur="2s" begin="1.10s" repeatCount="indefinite"/></circle>
   </g>
   <path id="bomberPath" d="M 47 161.0 H 839" fill="none" stroke="none"/>
   <g class="bomber"><circle cx="0" cy="0" r="18" fill="#ef4444"/><circle cx="0" cy="-2" r="14" fill="#fbbf24"/><circle cx="-4" cy="-8" r="2.5" fill="#1e293b"/><circle cx="4" cy="-8" r="2.5" fill="#1e293b"/><path d="M-3 2 Q0 6 3 2" fill="none" stroke="#1e293b" stroke-width="1.5"/><animateMotion dur="5.5s" repeatCount="indefinite" rotate="auto"><mpath href="#bomberPath"/></animateMotion></g>
-  <g class="bomb" transform="translate(612 144.0)"><circle cx="21" cy="21" r="16" fill="#f1f5f9" stroke="#f59e0b" stroke-width="2"/><path d="M21 5 L21 2" stroke="#f59e0b" stroke-width="2"/><circle cx="21" cy="0" r="3" fill="#ef4444"><animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/></circle><circle cx="16" cy="18" r="3" fill="#94a3b8" opacity="0.6"/><circle cx="26" cy="24" r="2" fill="#94a3b8" opacity="0.4"/><animateTransform attributeName="transform" type="translate" values="612 144.0;666 144.0;612 144.0" dur="3.4s" repeatCount="indefinite"/></g>
+  <g class="bomb"><circle cx="612" cy="161" r="10" fill="#f1f5f9" stroke="#f59e0b" stroke-width="2"><animate attributeName="r" values="10;12;10" dur="0.5s" repeatCount="indefinite"/></circle><path d="M612 148 L612 145" stroke="#f59e0b" stroke-width="2"/><circle cx="612" cy="143" r="3" fill="#ef4444"><animate attributeName="opacity" values="1;0;1" dur="0.3s" repeatCount="indefinite"/></circle><animate attributeName="cx" values="612;666;612" dur="3.4s" repeatCount="indefinite"/></g>
+  <g class="bomb"><circle cx="300" cy="161" r="10" fill="#f1f5f9" stroke="#f59e0b" stroke-width="2"><animate attributeName="r" values="10;12;10" dur="0.5s" repeatCount="indefinite"/></circle><path d="M300 148 L300 145" stroke="#f59e0b" stroke-width="2"/><circle cx="300" cy="143" r="3" fill="#ef4444"><animate attributeName="opacity" values="1;0;1" dur="0.3s" repeatCount="indefinite"/></circle><animate attributeName="cx" values="300;354;300" dur="4.2s" repeatCount="indefinite"/></g>
   <text x="42" y="226" class="sub">status: bombing the task queue • mission: automate the boring, explode the complexity</text>
 </svg>
